@@ -33,7 +33,7 @@ do
 
 done
 
-# verifier si la motif "quota_check "n'existe pas
+# verifier si le motif "quota_check "n'existe pas
 if ! crontab -l 2>/dev/null | grep -q "quota_check.sh"; then
     echo "Ajout de la tâche cron hebdomadaire..."
     (crontab -l 2>/dev/null; echo "0 8 * * 1 ~/quota_check.sh") | crontab -
