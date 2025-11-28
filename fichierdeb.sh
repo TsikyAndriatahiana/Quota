@@ -1,4 +1,5 @@
 #!/bin/bash
+#le repertoire debs est un répertoire qui contient tout le ficiher .deb que l'on vient de copier
 echo -e "Content-Type: text/html\n\n"
 echo "<html>"
 echo "<head>"
